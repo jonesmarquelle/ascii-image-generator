@@ -2,7 +2,6 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import githubLogo from "../../img/github-logo-64x.png";
 
 const Home: NextPage = () => {
   return (
@@ -17,13 +16,17 @@ const Home: NextPage = () => {
           <Link href="https://github.com/jonesmarquelle">
             <Image
               className="w-8 md:w-12 aspect-square" 
-              src={githubLogo}
+              src="/github-logo-64x.png"
+              width={64}
+              height={64}
               alt="Github Link"
             />
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-5xl font-thin w-full text-center">Image-To-Ascii Generator</h1>
+          <h1 className="text-5xl font-thin w-full text-center">
+            Image-To-Ascii Generator
+          </h1>
           <div className="w-screen max-h-screen flex flex-col md:flex-row gap-10 p-20">
             <div className="flex flex-col w-full items-center">
                 <label className="flex w-full lg:w-3/4 aspect-square text-3xl rounded-xl text-center justify-center items-center p-4 border-slate-400 border-4 border-dashed cursor-pointer">
